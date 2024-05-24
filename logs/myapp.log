@@ -1,0 +1,35 @@
+2024-05-23T09:57:28.720+08:00  INFO 27100 --- [Login_back] [main] o.s.login_back.LoginBackApplication      : Starting LoginBackApplication using Java 20.0.2 with PID 27100 (D:\Desktop\Login_Vue\2024.05.17_login\login-backend\Login_back\target\classes started by z4638 in D:\Desktop\Login_Vue\2024.05.17_login\login-backend)
+2024-05-23T09:57:28.729+08:00  INFO 27100 --- [Login_back] [main] o.s.login_back.LoginBackApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-05-23T09:57:29.897+08:00  INFO 27100 --- [Login_back] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-23T09:57:29.961+08:00  INFO 27100 --- [Login_back] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 1 JPA repository interface.
+2024-05-23T09:57:30.179+08:00  WARN 27100 --- [Login_back] [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.springboot.login_back]' package. Please check your configuration.
+2024-05-23T09:57:30.882+08:00  INFO 27100 --- [Login_back] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2024-05-23T09:57:30.888+08:00  INFO 27100 --- [Login_back] [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.39] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [2.0.5]
+2024-05-23T09:57:30.888+08:00  INFO 27100 --- [Login_back] [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.39] using APR version [1.7.4].
+2024-05-23T09:57:30.905+08:00  INFO 27100 --- [Login_back] [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2024-05-23T09:57:30.920+08:00  INFO 27100 --- [Login_back] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-23T09:57:30.921+08:00  INFO 27100 --- [Login_back] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-23T09:57:30.999+08:00  INFO 27100 --- [Login_back] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-23T09:57:31.000+08:00  INFO 27100 --- [Login_back] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2209 ms
+2024-05-23T09:57:31.222+08:00  INFO 27100 --- [Login_back] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-23T09:57:31.733+08:00  INFO 27100 --- [Login_back] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5b48f0f4
+2024-05-23T09:57:31.737+08:00  INFO 27100 --- [Login_back] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-23T09:57:31.815+08:00  INFO 27100 --- [Login_back] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-23T09:57:31.919+08:00  INFO 27100 --- [Login_back] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-23T09:57:31.977+08:00  INFO 27100 --- [Login_back] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-23T09:57:32.285+08:00  INFO 27100 --- [Login_back] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-23T09:57:33.617+08:00  INFO 27100 --- [Login_back] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-23T09:57:33.621+08:00  INFO 27100 --- [Login_back] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-23T09:57:34.128+08:00  WARN 27100 --- [Login_back] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-23T09:57:34.843+08:00  WARN 27100 --- [Login_back] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: eb99f263-bde4-46ec-825b-3f38bc9c24f3
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-05-23T09:57:35.090+08:00  INFO 27100 --- [Login_back] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7fd3c38b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@27260f9c, org.springframework.security.web.context.SecurityContextHolderFilter@f047670, org.springframework.security.web.header.HeaderWriterFilter@2f0b5d79, org.springframework.web.filter.CorsFilter@25031fd4, org.springframework.security.web.csrf.CsrfFilter@7f5c4ff8, org.springframework.security.web.authentication.logout.LogoutFilter@157267db, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@17b9c9ff, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@9120cb5, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@54faa040, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@379df603, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@27d44578, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2446597e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@35d4fecf, org.springframework.security.web.access.ExceptionTranslationFilter@1a0e5c0c, org.springframework.security.web.access.intercept.AuthorizationFilter@380e470a]
+2024-05-23T09:57:35.225+08:00  INFO 27100 --- [Login_back] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
+2024-05-23T09:57:35.240+08:00  INFO 27100 --- [Login_back] [main] o.s.login_back.LoginBackApplication      : Started LoginBackApplication in 7.148 seconds (process running for 8.548)
+2024-05-23T09:58:33.846+08:00  INFO 27100 --- [Login_back] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-23T09:58:33.849+08:00  INFO 27100 --- [Login_back] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-23T09:58:33.859+08:00  INFO 27100 --- [Login_back] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

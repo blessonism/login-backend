@@ -8,42 +8,33 @@ package org.springboot.login_back.interceptor;
  * @Description:
  **/
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
-import org.springframework.web.servlet.ModelAndView;
+
 
 @Component
 public class AuthInterceptor implements HandlerInterceptor {
-
-    private static final Logger logger = LoggerFactory.getLogger(AuthInterceptor.class);
-
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-        // 假设用户登录状态保存在会话中的 "user" 属性
-        Object user = request.getSession().getAttribute("user");
-        if (user == null) {
-/*            // 用户未登录，重定向到登录页面
-            logger.info("No user found in session, redirecting to login page.");
-            response.sendRedirect("/login");*/
-            return true; // 返回false表示请求中断
+        String role = (String) request.getSession().getAttribute("role");
+        String requestURI = request.getRequestURI();
+
+        // 允许对 /login 请求的处理
+        if (requestURI.equals("/login")) {
+            return true;
         }
-        logger.info("User logged in, proceeding with request.");
-        return true; // 用户已登录，继续处理请求
-    }
 
-    @Override
-    public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler,
-        ModelAndView modelAndView) throws Exception {
-        // 请求处理之后进行调用，但在视图被渲染之前（这里不用实现）
-    }
-
-    @Override
-    public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex)
-        throws Exception {
-        // 在整个请求结束之后被调用，也就是在DispatcherServlet渲染了对应的视图之后执行（这里不用实现）
+        if (requestURI.startsWith("/admin") && !"ADMIN".equals(role)) {
+            response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
+            response.setHeader("WWW-Authenticate", "Basic realm=\"Access to admin area\"");
+            return false;
+        } else if (requestURI.startsWith("/user") && role == null) {
+            response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
+            response.setHeader("WWW-Authenticate", "Basic realm=\"Access to user area\"");
+            return false;
+        }
+        return true;
     }
 }

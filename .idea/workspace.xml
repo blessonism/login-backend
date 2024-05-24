@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbcc84e4-b31f-4260-9be4-b73478157962" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/Login_back/src/main/java/org/springboot/login_back/config/WebConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Login_back/src/main/java/org/springboot/login_back/interceptor/AuthInterceptor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Login_back/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Login_back/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login_back/src/main/java/org/springboot/login_back/config/WebConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login_back/src/main/java/org/springboot/login_back/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Login_back/src/main/java/org/springboot/login_back/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login_back/src/main/java/org/springboot/login_back/interceptor/AuthInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/Login_back/src/main/java/org/springboot/login_back/interceptor/AuthInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login_back/src/main/java/org/springboot/login_back/service/serviceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Login_back/src/main/java/org/springboot/login_back/service/serviceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login_back/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Login_back/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +54,10 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.6321839",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.archetype.catalogs",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -89,7 +95,9 @@
       <workItem from="1715930286862" duration="573000" />
       <workItem from="1715943779926" duration="3000" />
       <workItem from="1715943815183" duration="3228000" />
-      <workItem from="1716122910488" duration="8646000" />
+      <workItem from="1716122910488" duration="12216000" />
+      <workItem from="1716426511618" duration="6828000" />
+      <workItem from="1716434420776" duration="8403000" />
     </task>
     <servers />
   </component>

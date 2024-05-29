@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.springboot.login_back.mapper.UserMapper">
+    <select id="getUserById" parameterType="int" resultType="org.springboot.login_back.domain.User">
+        SELECT * FROM user WHERE user.id = #{id}
+    </select>
+
+    <select id="findAll" resultType="org.springboot.login_back.domain.User">
+        SELECT * FROM user
+    </select>
+    <insert id="insert" parameterType="com.example.demo.model.User" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO user (uname, role) VALUES (#{uname}, #{role})
+    </insert>
+    <update id="update" parameterType="org.springboot.login_back.domain.User">
+        UPDATE user SET uname = #{uname} WHERE id = #{id}
+    </update>
+    <delete id="delete" parameterType="long">
+        DELETE FROM user WHERE id = #{id}
+    </delete>
+</mapper>

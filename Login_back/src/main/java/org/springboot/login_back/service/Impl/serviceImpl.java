@@ -1,8 +1,9 @@
-package org.springboot.login_back.service;
+package org.springboot.login_back.service.Impl;
 
 
 import jakarta.annotation.Resource;
 import org.springboot.login_back.domain.User;
+import org.springboot.login_back.service.UserService;
 import org.springframework.stereotype.Service;
 import org.springboot.login_back.repository.UserDao;
 import org.slf4j.Logger;
@@ -17,7 +18,7 @@ import org.slf4j.LoggerFactory;
  **/
 
 @Service
-public class serviceImpl implements UserService{
+public class serviceImpl implements UserService {
 
     private static final Logger logger = LoggerFactory.getLogger(UserService.class);
 

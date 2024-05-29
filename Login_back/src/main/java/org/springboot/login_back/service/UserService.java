@@ -10,6 +10,7 @@ package org.springboot.login_back.service;
 
 import org.springboot.login_back.domain.User;
 
+
 public interface UserService {
     /**
      * 登录业务逻辑
@@ -25,4 +26,5 @@ public interface UserService {
      * @return
      */
     User registService(User user);
+
 }

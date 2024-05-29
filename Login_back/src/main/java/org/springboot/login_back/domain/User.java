@@ -25,19 +25,19 @@ public class User {
     // 密码属性varchar对应String
     private String password;
 
-    public User(String uname, String password, String role, long uid) {
-        this.uname = uname;
-        this.password = password;
-        this.role = role;
-        this.uid = uid;
-    }
-
     // role属性varchar对应String
     private String role;
 
+    public User(String uname, String password, String role, long id) {
+        this.uname = uname;
+        this.password = password;
+        this.role = role;
+        this.id = id;
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long uid;
+    private long id;
 
     public User() {
 
@@ -59,12 +59,12 @@ public class User {
         this.uname = uname;
     }
 
-    public long getUid() {
-        return uid;
+    public long getId() {
+        return id;
     }
 
-    public void setUid(long uid) {
-        this.uid = uid;
+    public void setId(long id) {
+        this.id = id;
     }
 
     public String getPassword() {

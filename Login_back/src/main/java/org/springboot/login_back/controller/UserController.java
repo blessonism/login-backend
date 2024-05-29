@@ -37,7 +37,7 @@ public class UserController {
         }
     }
 
-    @PostMapping("/register")
+        @PostMapping("/register")
     public Result register(@RequestBody User newUser){
         if (newUser.getRole() == null || newUser.getRole().isEmpty()) {
             newUser.setRole("USER");

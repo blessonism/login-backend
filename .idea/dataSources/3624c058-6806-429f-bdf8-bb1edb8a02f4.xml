@@ -1033,72 +1033,73 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     <schema id="300" parent="1" name="micro_todo">
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
-    <schema id="301" parent="1" name="login">
+    <schema id="301" parent="1" name="xsgl">
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
-    <schema id="302" parent="1" name="xsgl">
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </schema>
-    <schema id="303" parent="1" name="logindemo">
+    <schema id="302" parent="1" name="logindemo">
       <Current>1</Current>
-      <LastIntrospectionLocalTimestamp>2024-05-16.13:46:43</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-05-29.08:30:09</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
-    <user id="304" parent="1" name="mysql.infoschema">
+    <user id="303" parent="1" name="mysql.infoschema">
       <CanLogin>0</CanLogin>
       <Host>localhost</Host>
       <Plugin>caching_sha2_password</Plugin>
     </user>
-    <user id="305" parent="1" name="mysql.session">
+    <user id="304" parent="1" name="mysql.session">
       <CanLogin>0</CanLogin>
       <Host>localhost</Host>
       <Plugin>caching_sha2_password</Plugin>
     </user>
-    <user id="306" parent="1" name="mysql.sys">
+    <user id="305" parent="1" name="mysql.sys">
       <CanLogin>0</CanLogin>
       <Host>localhost</Host>
       <Plugin>caching_sha2_password</Plugin>
     </user>
-    <user id="307" parent="1" name="root">
+    <user id="306" parent="1" name="root">
       <Host>localhost</Host>
       <Plugin>caching_sha2_password</Plugin>
     </user>
-    <table id="308" parent="303" name="user">
+    <table id="307" parent="302" name="user">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <column id="309" parent="308" name="uid">
+    <column id="308" parent="307" name="id">
       <AutoIncrement>2</AutoIncrement>
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="310" parent="308" name="uname">
+    <column id="309" parent="307" name="uname">
       <DasType>varchar(30)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="311" parent="308" name="password">
+    <column id="310" parent="307" name="password">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <index id="312" parent="308" name="PRIMARY">
-      <ColNames>uid</ColNames>
+    <column id="311" parent="307" name="role">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <index id="312" parent="307" name="PRIMARY">
+      <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="313" parent="308" name="uname">
+    <index id="313" parent="307" name="uname">
       <ColNames>uname</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="314" parent="308" name="PRIMARY">
+    <key id="314" parent="307" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <key id="315" parent="308" name="uname">
+    <key id="315" parent="307" name="uname">
       <UnderlyingIndexName>uname</UnderlyingIndexName>
     </key>
   </database-model>

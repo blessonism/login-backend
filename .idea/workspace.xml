@@ -5,12 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbcc84e4-b31f-4260-9be4-b73478157962" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/Login_back/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Login_back/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Login_back/src/main/java/org/springboot/login_back/config/WebConfig.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Login_back/src/main/java/org/springboot/login_back/controller/UserDataController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Login_back/src/main/java/org/springboot/login_back/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Login_back/src/main/java/org/springboot/login_back/service/Impl/UserDataServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Login_back/src/main/java/org/springboot/login_back/service/UserDataService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Login_back/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Login_back/src/test/java/org/springboot/login_back/AuthInterceptorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Login_back/src/main/java/org/springboot/login_back/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Login_back/src/main/java/org/springboot/login_back/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login_back/src/main/java/org/springboot/login_back/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/Login_back/src/main/java/org/springboot/login_back/domain/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Login_back/src/main/java/org/springboot/login_back/interceptor/AuthInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/Login_back/src/main/java/org/springboot/login_back/interceptor/AuthInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Login_back/src/main/java/org/springboot/login_back/service/serviceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Login_back/src/main/java/org/springboot/login_back/service/serviceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login_back/src/main/java/org/springboot/login_back/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Login_back/src/main/java/org/springboot/login_back/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login_back/src/main/java/org/springboot/login_back/service/serviceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Login_back/src/main/java/org/springboot/login_back/service/Impl/serviceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Login_back/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Login_back/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login_back/src/test/java/org/springboot/login_back/LoginBackApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,12 +27,23 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Login_back/src/main/resources/application.properties" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -38,6 +56,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.AuthInterceptorTest.testAdminAccessWithAdminRole.executor": "Run",
+    "JUnit.AuthInterceptorTest.testAdminAccessWithoutRole.executor": "Run",
+    "JUnit.AuthInterceptorTest.testUserAccessWithoutRole.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -66,7 +87,55 @@
     ]
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.LoginBackApplication">
+    <configuration name="AuthInterceptorTest.testAdminAccessWithAdminRole" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Login_back" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.springboot.login_back.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.springboot.login_back" />
+      <option name="MAIN_CLASS_NAME" value="org.springboot.login_back.AuthInterceptorTest" />
+      <option name="METHOD_NAME" value="testAdminAccessWithAdminRole" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthInterceptorTest.testAdminAccessWithoutRole" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Login_back" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.springboot.login_back.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.springboot.login_back" />
+      <option name="MAIN_CLASS_NAME" value="org.springboot.login_back.AuthInterceptorTest" />
+      <option name="METHOD_NAME" value="testAdminAccessWithoutRole" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthInterceptorTest.testUserAccessWithoutRole" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Login_back" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.springboot.login_back.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.springboot.login_back" />
+      <option name="MAIN_CLASS_NAME" value="org.springboot.login_back.AuthInterceptorTest" />
+      <option name="METHOD_NAME" value="testUserAccessWithoutRole" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LoginBackApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="Login_back" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.springboot.login_back.LoginBackApplication" />
@@ -74,6 +143,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AuthInterceptorTest.testAdminAccessWithAdminRole" />
+        <item itemvalue="JUnit.AuthInterceptorTest.testUserAccessWithoutRole" />
+        <item itemvalue="JUnit.AuthInterceptorTest.testAdminAccessWithoutRole" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -98,6 +174,11 @@
       <workItem from="1716122910488" duration="12216000" />
       <workItem from="1716426511618" duration="6828000" />
       <workItem from="1716434420776" duration="8403000" />
+      <workItem from="1716509238084" duration="2937000" />
+      <workItem from="1716512209911" duration="870000" />
+      <workItem from="1716534710664" duration="8076000" />
+      <workItem from="1716567076575" duration="2967000" />
+      <workItem from="1716942129050" duration="12132000" />
     </task>
     <servers />
   </component>
